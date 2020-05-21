@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DVS="/usr/local/dvs/"
-tmp="usr/local/dvs/tmp/"
+tmp="/usr/local/dvs/tmp/"
 AB="/opt/Analog_Bridge/"
 MB="/opt/MMDVM_Bridge/"
 
