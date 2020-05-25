@@ -8,6 +8,13 @@ MB="/opt/MMDVM_Bridge/"
 source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
+new_date=200525
+if [ ${date_update_scripts} -lt ${new_date} ]; then  새로운 버전 있음
+else 없음
+fi
+
+
+
 # add line
 #echo "abc" >> test.txt
 #echo "abc" | sudo tee -a test.txt
