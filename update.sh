@@ -22,7 +22,6 @@ new_date=200523
 
 
 #---실행시작--------------------------------------------------------------------
-function update() {
 
 
 echo "업데이트 실행"
@@ -35,28 +34,5 @@ whiptail --msgbox "\
 
 " 10 70 1
 sudo rm ${DVS}update.sh
-}
 
-#----- MAIN ------------------------------------------------------------------------------
-if [ ${date_update_scripts} -lt ${new_date} ];
-then
-        if (whiptail --title " 업데이트 " --yesno "\
-\n
-                    새로운 업데이트가 있습니다.
 
-                      업데이트 하시겠습니까?
-
-" 12 70); then
-        sudo sed -i -e "/^date_update_scripts=/ c date_update_scripts=${new_date}" "${DVS}lan/korean.txt"
-        update
-        else clear; ${DVS}update_upgrade.sh; exit 0
-        fi
-else
-whiptail --msgbox "\
-\n
-                    새로운 업데이트가 없습니다.
-
-" 10 70 1
-sudo rm ${DVS}update.sh
-fi
-exit 0
