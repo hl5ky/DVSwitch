@@ -28,12 +28,13 @@ function update() {
 echo "업데이트 실행"
 
 sudo cp ${DVS}test.txt tty.txt > /dev/null 2>&1
-sudo rm ${DVS}update.sh
+
 whiptail --msgbox "\
 \n
                  업데이트가 완료되었습니다.
 
 " 10 70 1
+sudo rm ${DVS}update.sh
 }
 
 #----- MAIN ------------------------------------------------------------------------------
