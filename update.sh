@@ -8,7 +8,7 @@ MB="/opt/MMDVM_Bridge/"
 source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
-new_date=200520
+new_date=200521
 
 
 # add line
