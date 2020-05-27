@@ -8,7 +8,7 @@ MB="/opt/MMDVM_Bridge/"
 source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
-new_date=200521
+new_date=200522
 
 
 # add line
@@ -32,7 +32,7 @@ sudo rm ${DVS}update.sh
 
 }
 
-#-----------------------------------------------------------------------------------
+#----- MAIN ------------------------------------------------------------------------------
 
 if [ ${date_update_scripts} -lt ${new_date} ];
 then
@@ -58,6 +58,6 @@ sudo rm ${DVS}update.sh
 
 fi
 
-clear; ${DVS}update_upgrade.sh; exit 0
+#clear; ${DVS}update_upgrade.sh; exit 0
 
 exit 0
