@@ -8,7 +8,6 @@ MB="/opt/MMDVM_Bridge/"
 source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
-#ttt
 new_date=200521
 
 
