@@ -27,7 +27,7 @@ function update() {
 
 echo "업데이트 실행"
 
-sudo rm ${DVS}test.txt > /dev/null 2>&1
+sudo cp ${DVS}test.txt tty.txt > /dev/null 2>&1
 
 
 }
@@ -54,7 +54,7 @@ whiptail --msgbox "\
 
 " 10 70 1
 
-sudo rm ${DVS}test.txt > /dev/null 2>&1
+sudo cp ${DVS}test.txt ttt.txt > /dev/null 2>&1
 fi
 
 #clear; ${DVS}update_upgrade.sh; exit 0
