@@ -10,6 +10,8 @@ source ${DVS}var.txt
 
 sudo rm update_chk.sh
 
+#다운로드테스트 sudo wget -O /usr/local/dvs/update.sh https://raw.githubusercontent.com/hl5ky/DVSwitch/master/update.sh
+
 # add line
 #echo "abc" >> test.txt
 #echo "abc" | sudo tee -a test.txt
@@ -26,7 +28,7 @@ sudo rm update_chk.sh
 echo "업데이트 실행"
 
 sudo cp ${DVS}test.txt tty.txt > /dev/null 2>&1
-#---실행시작--------------------------------------------------------------------
+#---실행끝----------------------------------------------------------------------
 whiptail --msgbox "\
 \n
                      업데이트가 완료되었습니다.
