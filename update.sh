@@ -28,7 +28,7 @@ function update() {
 echo "업데이트 실행"
 
 sudo cp ${DVS}test.txt tty.txt > /dev/null 2>&1
-sudo rm update.sh
+sudo rm ${DVS}update.sh
 
 }
 
