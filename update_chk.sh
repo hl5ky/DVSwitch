@@ -22,10 +22,12 @@ then
         else clear; ${DVS}tools_menu.sh; exit 0
         fi
 else
+clear
 whiptail --msgbox "\
 \n
                    새로운 업데이트가 없습니다.
 " 10 70 1
+clear
 sudo rm ${DVS}update_chk.sh
 fi
 
