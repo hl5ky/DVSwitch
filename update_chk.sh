@@ -6,7 +6,7 @@ tmp="/usr/local/dvs/tmp/"
 source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
-new_date=200523
+new_date=200524
 
 if [ ${date_update_scripts} -lt ${new_date} ];
 then
