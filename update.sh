@@ -8,6 +8,8 @@ MB="/opt/MMDVM_Bridge/"
 source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
+sudo rm update_chk.sh
+
 # add line
 #echo "abc" >> test.txt
 #echo "abc" | sudo tee -a test.txt
@@ -31,5 +33,3 @@ whiptail --msgbox "\
 
 " 10 70 1
 sudo rm ${DVS}update.sh
-
-
