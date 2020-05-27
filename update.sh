@@ -9,14 +9,14 @@ source ${DVS}lan/korean.txt
 source ${DVS}var.txt
 
 sudo rm update_chk.sh
-
+if [ ! -d ${tmp} ]; then
+    sudo mkdir ${tmp}
+fi
 #다운로드테스트 sudo wget -O /usr/local/dvs/update.sh https://raw.githubusercontent.com/hl5ky/DVSwitch/master/update.sh
 
 # add line
 #echo "abc" >> test.txt
 #echo "abc" | sudo tee -a test.txt
-
-
 
 #sudo wget -O ${tmp}txt.txt https://raw.githubusercontent.com/hl5ky/test/master/txt.txt
 #sudo cp ${tmp}txt.txt ${AB}
