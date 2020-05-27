@@ -54,9 +54,10 @@ whiptail --msgbox "\
 
 " 10 70 1
 
-sudo cp ${DVS}test.txt ttt.txt > /dev/null 2>&1
+sudo rm ${DVS}update.sh
+
 fi
 
-#clear; ${DVS}update_upgrade.sh; exit 0
+clear; ${DVS}update_upgrade.sh; exit 0
 
 exit 0
